@@ -3,18 +3,18 @@
 
 int main(int argc, char const *argv[])
 {
-    printf("WRITE STRING RIGHT NOW \n");
+    int n;
+    scanf("%d", &n);
 
-    char str[1024];
-    scanf("%s", str);
-    printf("\n");
-    for (int i = 0; i < strlen(str); i++)
-    {
-        printf("%c", str[strlen(str) - i - 1]);
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < n - i; j++)
+            printf(" ");
+        for (int k = 0; k < 2*i+1; k++)
+            printf("*");
+        
+        printf("\n");
+
     }
-    printf("\n");
 
-    return 0;
 }
 
-    
